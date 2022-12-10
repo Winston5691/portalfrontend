@@ -102,7 +102,7 @@ function Enroll() {
               class='form-control'
               id='exampleInputEmail1'
               aria-describedby='emailHelp'
-              placeholder='First name'
+              placeholder='email'
               ref={emailRef}
               onChange={(e)=>setfname(e.target.value)}
             />
