@@ -30,7 +30,7 @@ const Dashboard = () => {
   const user = "tutor"
   return (
     <div style={{backgroundColor: 'white', color:'black'}}>
-      {user=="tutor"  && (
+      {user ==="tutor"  && (
         <div>
           <div>Students</div>
           <table className="table">
@@ -107,7 +107,7 @@ const Dashboard = () => {
 
         </div>
 
-{user=="student"  && (
+{user === "student"  && (
   <div>
     <div>Results</div>
         <table className="table">
