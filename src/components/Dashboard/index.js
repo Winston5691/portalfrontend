@@ -27,7 +27,7 @@ const Dashboard = () => {
     return axios.get(API_results).then((response) => response.data)
   }
   console.log(getResults())
-  const user = "tutor"
+  const user = "student"
   return (
     <div style={{backgroundColor: 'white', color:'black'}}>
       {user ==="tutor"  && (
