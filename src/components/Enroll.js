@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import './Enroll.css';
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-const baseApiUrl = 'http://localhost:4000';
+const baseApiUrl = 'http://localhost:4000/api';
 function Enroll() {
   const fnameRef = useRef();
   const lnameRef = useRef();
@@ -61,9 +61,11 @@ function Enroll() {
       body: JSON.stringify({
         first_name: fname,
         last_name: lname,
+        name: fname + ' ' + lname,
         email: email,
         password: pass,
         confirm_password: cpass,
+        role: 'student',
       }),
     })
       .then((r) => r.json())
@@ -85,7 +87,7 @@ function Enroll() {
               aria-describedby='emailHelp'
               placeholder='First Name'
               ref={fnameRef}
-              onChange={(e)=>setEmail(e.target.value)}
+              onChange={(e)=>setfname(e.target.value)}
             />
             <input
               type='text'
@@ -102,9 +104,9 @@ function Enroll() {
               class='form-control'
               id='exampleInputEmail1'
               aria-describedby='emailHelp'
-              placeholder='email'
+              placeholder='Email'
               ref={emailRef}
-              onChange={(e)=>setfname(e.target.value)}
+              onChange={(e)=>setEmail(e.target.value)}
             />
           </div>
           <div class='mb-3'>
