@@ -52,7 +52,7 @@ function Enroll() {
       setPass(passwordRef.current.value);
       setCpass(cpasswordRef.current.value);
     }
-
+    history.push('/welcome');
     fetch(`${baseApiUrl}/users`, {
       method: 'POST',
       headers: {
