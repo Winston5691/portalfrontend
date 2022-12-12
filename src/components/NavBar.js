@@ -66,7 +66,7 @@ function NavBar() {
             Log in as a tutor
           </button>
         </Link>
-        <Link exact to='/login' id='menu-login-link'>
+        <Link exact to='/studentlogin' id='menu-login-link'>
           <button type='button' id='menu-login-button'>
             Log in as a student
           </button>
