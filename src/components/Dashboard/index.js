@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 const Dashboard = () => {
@@ -46,7 +47,7 @@ const Dashboard = () => {
   const user = "student"
   return (
     <div style={{backgroundColor: 'white', color:'black'}}>
-      {user=="tutor"  &&  (
+      {user=="student"  &&  (
         <div>
           <div>Students</div>
           <table className="table">
@@ -63,24 +64,24 @@ const Dashboard = () => {
               <tr>
                 <th scope="row">1</th>
                 <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
+                <td>5625</td>
+                <td>DevOps</td>
+                <td>B</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@mdo</td>
+                <td>7652</td>
+                <td>Software Development</td>
+                <td>C</td>
 
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
+                <td>8978</td>
+                <td>Data science</td>
+                <td>A</td>
 
               </tr>
             </tbody>
@@ -99,31 +100,38 @@ const Dashboard = () => {
               <tr>
                 <th scope="row">1</th>
                 <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td>7.1.2023</td>
+                <td>20 mins</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <td>22.12.2022</td>
+                <td>2 hr</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
+                <td>15.12.2022</td>
+                <td>1 hr</td>
               </tr>
+              <Link to="/Form">
+            <button
+              type='submit'
+              class='btn btn-primary'
+              className='create-account'
+              // onClick={enrollUser}
+            >
+              Submitt Result
+            </button>
+          </Link>
             </tbody>
           </table>
         </div>
+        
       )}
 
-        <div>
-
-        </div>
-
-{user=="student" && (
+{/* {user=="student" && (
   <div>
     <div>Results</div>
         <table className="table">
@@ -147,8 +155,8 @@ const Dashboard = () => {
   ))}
         </table>
     </div>
-  )}
+  )} */}
   </div>
+  
   )}
-
 export default Dashboard;
