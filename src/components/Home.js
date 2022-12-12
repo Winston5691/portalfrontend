@@ -69,8 +69,8 @@ function Home() {
           <p>
           Join our passionate, hardworking team and help DevOps School prepare learners for their future careers in tech.
           </p>
-          <Link to='/workouts'>
-            <button type='button'>See Workouts</button>
+          <Link to='/AvailableCourses'>
+            <button type='button'>See Available courses</button>
           </Link>
           <br />
           <br />
@@ -112,7 +112,7 @@ function Home() {
               Python <br /> STATA and SPSS <br />{' '}
               Tableau, SQL and R-software
             </p>
-            <Link to='/signup'>
+            <Link to='/Enroll'>
               <button type='button'>Enroll</button>
             </Link>
           </div>
@@ -126,7 +126,7 @@ function Home() {
             <p>
               Javascript <br /> React<br /> Ruby on Rails
             </p>
-            <Link to='/signup'>
+            <Link to='/Enroll'>
               <button type='button'>Enroll</button>
             </Link>
           </div>
@@ -138,7 +138,7 @@ function Home() {
             <p>
             Git <br /> Docker <br /> Jenkins
             </p>
-            <Link to='/signup'>
+            <Link to='/Enroll'>
               <button type='button'>Enroll</button>
             </Link>
           </div>
